@@ -1,0 +1,29 @@
+select {
+    font-family: Poppins;
+    font-size: 1rem;
+    color: white;
+    background-color: transparent;
+    border: none;
+    width: 90px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 2vw 1vh 2vw;
+    background: #01509d;
+    font-family: Poppins;
+    font-size: 1rem;
+    color: white;
+}
+
+.wrap-div {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+.link-div {
+    display: flex;
+    gap: 1vw;
+}
