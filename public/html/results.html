@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/results.css">
+    
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="content">
+        <h1>2024 RACE RESULTS</h1>
+        <div class="wrap-div">
+            <div class="dropdown-div">
+                <select class="year-dropdown" id="year-dropdown">
+                    <option>2023</option>
+                </select>
+                <select class="season-dropdown" id="season-dropdown">
+                    <option>All seasons</option>
+                </select>
+                <select class="result-type-dropdown" id="result-type-dropdown" disabled="true">
+                    <option>Race result</option>
+                    <option>Fastest lap</option>
+                    <option>Sprint</option>
+                </select>
+            </div>
+            <table class="all-seasons-table" id="all-seasons-table">
+                <thead>
+                    <tr>
+                        <th>Grand Prix</th>
+                        <th>Date</th>
+                        <th>Winner</th>
+                        <th>Car</th>
+                        <th>Laps</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <table class="race-result-table" id="race-result-table">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>No</th>
+                        <th>Driver</th>
+                        <th>Car</th>
+                        <th>Laps</th>
+                        <th>Time/retired</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="white-row">
+                        <td>Bahrain</td>
+                        <td>02 Mar 2024</td>
+                        <td>Verstappen</td>
+                        <td>Red Bull Racing Honda RBPT</td>
+                        <td>57</td>
+                        <td>1:31:44.742</td>
+                        <td>26</td>
+                    </tr>
+                    <tr class="gray-row">
+                        <td>Bahrain</td>
+                        <td>02 Mar 2024</td>
+                        <td>Verstappen</td>
+                        <td>Red Bull Racing Honda RBPT</td>
+                        <td>57</td>
+                        <td>1:31:44.742</td>
+                        <td>26</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="sprint-table" id="sprint-table">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>No</th>
+                        <th>Driver</th>
+                        <th>Car</th>
+                        <th>Laps</th>
+                        <th>Time/retired</th>
+                        <th>Pts</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="white-row">
+                        <td>Bahrain</td>
+                        <td>02 Mar 2024</td>
+                        <td>Verstappen</td>
+                        <td>Red Bull Racing Honda RBPT</td>
+                        <td>57</td>
+                        <td>1:31:44.742</td>
+                        <td>26</td>
+                    </tr>
+                    <tr class="gray-row">
+                        <td>Bahrain</td>
+                        <td>02 Mar 2024</td>
+                        <td>Verstappen</td>
+                        <td>Red Bull Racing Honda RBPT</td>
+                        <td>57</td>
+                        <td>1:31:44.742</td>
+                        <td>26</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="fastest-lap-table" id="fastest-lap-table">
+                <thead>
+                    <tr>
+                        <th>Pos</th>
+                        <th>No</th>
+                        <th>Driver</th>
+                        <th>Car</th>
+                        <th>Lap</th>
+                        <th>Time of day</th>
+                        <th>Time</th>
+                        <th>Avg speed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="white-row">
+                        <td>Bahrain</td>
+                        <td>02 Mar 2024</td>
+                        <td>Verstappen</td>
+                        <td>Red Bull Racing Honda RBPT</td>
+                        <td>57</td>
+                        <td>1:31:44.742</td>
+                        <td>26</td>
+                    </tr>
+                    <tr class="gray-row">
+                        <td>Bahrain</td>
+                        <td>02 Mar 2024</td>
+                        <td>Verstappen</td>
+                        <td>Red Bull Racing Honda RBPT</td>
+                        <td>57</td>
+                        <td>1:31:44.742</td>
+                        <td>26</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <script src="../js/results.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+session_id,schedule_id,month,date,name
+1,1,Feb,21,Day 1
+2,1,Feb,22,Day 2
+3,1,Feb,23,Day 3
+4,2,Feb,29,Practice 1
+5,2,Feb,29,Practice 2
+6,2,Mar,1,Practice 3
+7,2,Mar,1,Qualifying
+8,2,Mar,2,Race
+9,3,Mar,7,Practice 1
+10,3,Mar,7,Practice 2
+11,3,Mar,8,Practice 3
+12,3,Mar,8,Qualifying
+13,3,Mar,9,Race
+14,4,Mar,22,Practice 1
+15,4,Mar,22,Practice 2
+16,4,Mar,23,Practice 3
+17,4,Mar,23,Qualifying
+18,4,Mar,24,Race
+19,5,Apr,5,Practice 1
+20,5,Apr,5,Practice 2
+21,5,Apr,6,Practice 3
+22,5,Apr,6,Qualifying
+23,5,Apr,7,Race
+24,6,Apr,19,Practice 1
+25,6,Apr,19,Sprint Qualifying
+26,6,Apr,20,Sprint
+27,6,Apr,20,Qualifying
+28,6,Apr,21,Race
+29,7,May,3,Practice 1
+30,7,May,3,Sprint Qualifying
+31,7,May,4,Sprint
+32,7,May,4,Qualifying
+33,7,May,5,Race
+34,8,May,17,Practice 1
+35,8,May,17,Practice 2
+36,8,May,18,Practice 3
+37,8,May,18,Qualifying
+38,8,May,19,Race
+39,9,May,24,Practice 1
+40,9,May,24,Practice 2
+41,9,May,25,Practice 3
+42,9,May,25,Qualifying
+43,9,May,26,Race
+44,10,Jun,7,Practice 1
+45,10,Jun,7,Practice 2
+46,10,Jun,8,Practice 3
+47,10,Jun,8,Qualifying
+48,10,Jun,9,Race
+49,11,Jun,21,Practice 1
+50,11,Jun,21,Practice 2
+51,11,Jun,22,Practice 3
+52,11,Jun,22,Qualifying
+53,11,Jun,23,Race
+54,12,Jun,28,Practice 1
+55,12,Jun,28,Sprint Qualifying
+56,12,Jun,29,Sprint
+57,12,Jun,29,Qualifying
+58,12,Jun,30,Race
+59,13,Jul,5,Practice 1
+60,13,Jul,5,Practice 2
+61,13,Jul,6,Practice 3
+62,13,Jul,6,Qualifying
+63,13,Jul,7,Race
+64,14,Jul,19,Practice 1
+65,14,Jul,19,Practice 2
+66,14,Jul,20,Practice 3
+67,14,Jul,20,Qualifying
+68,14,Jul,21,Race
+69,15,Jul,26,Practice 1
+70,15,Jul,26,Practice 2
+71,15,Jul,27,Practice 3
+72,15,Jul,27,Qualifying
+73,15,Jul,28,Race
+74,16,Aug,23,Practice 1
+75,16,Aug,23,Practice 2
+76,16,Aug,24,Practice 3
+77,16,Aug,24,Qualifying
+78,16,Aug,25,Race
+79,17,Aug,30,Practice 1
+80,17,Aug,30,Practice 2
+81,17,Aug,31,Practice 3
+82,17,Aug,31,Qualifying
+83,17,Sep,1,Race
+84,18,Sep,13,Practice 1
+85,18,Sep,13,Practice 2
+86,18,Sep,14,Practice 3
+87,18,Sep,14,Qualifying
+88,18,Sep,15,Race
+89,19,Sep,20,Practice 1
+90,19,Sep,20,Practice 2
+91,19,Sep,21,Practice 3
+92,19,Sep,21,Qualifying
+93,19,Sep,22,Race

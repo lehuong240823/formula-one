@@ -1,0 +1,68 @@
+@import url(constants.css);
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: var(--s-gap);
+    padding: var(--body-s-v-padding) var(--body-s-h-padding) var(--body-s-v-padding) var(--body-s-h-padding);
+    background-color: var(--black);
+    font-family: "Poppins", sans-serif;
+    font-size: var(--button-link);
+    color: var(--white);
+}
+
+hr {
+    width: 100%;
+    border-color: var(--dark-gray);
+    margin: 0 0 0 0;
+}
+
+.contact-div {
+    display: flex;
+    gap: var(--s-gap);
+}
+
+.social-media-div {
+    display: flex;
+    gap: var(--s-gap);
+}
+
+.social-media-img {
+    width: calc(var(--button-link)*1.5);
+}
+
+.sponsor-div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-gap);
+}
+
+.sponsor-img-div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--s-gap);
+}
+
+.sponsor-img {
+    max-height: calc(var(--button-link)*2);
+    max-width: calc(var(--button-link)*6);
+}
+
+.copyright-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: calc(var(--body-s-v-padding)*-0.5) 0 calc(var(--body-s-v-padding)*-0.5) 0;
+}
+
+.footer-logo {
+    height: calc(var(--small-text)*2);
+}
+
+.copyright-text {
+    font-size: var(--small-text);
+}

@@ -1,0 +1,91 @@
+@import url(constants.css);
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Orbitron", sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: var(--body-v-padding) var(--body-h-padding) var(--body-v-padding) var(--body-h-padding);
+    background-image: linear-gradient(180deg, hsla(0, 0.00%, 0.00%, 0.80), hsla(0, 0.00%, 100.00%, 0.00)),
+    url(../img/race-background.jpeg);
+    background-size: cover;
+    gap: var(--s-gap);
+}
+
+h1 {
+    font-size: var(--h1);
+    text-align: center;
+    text-shadow: 5px -1px 0px gray;
+    color: whitesmoke;
+}
+
+.wrap-div {
+    display: flex;
+    flex-direction: column;
+    font-family: "Titillium Web", sans-serif;
+    font-size: var(--table-text);
+}
+
+.dropdown-div {
+    display: flex;
+    gap: 3vw;
+    padding: var(--table-text) var(--table-side-padding) var(--table-text) var(--table-side-padding);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    background: var(--light-gray);
+}
+
+select {
+    background-color: transparent;
+    border: none;
+    font-size: var(--table-text);
+}
+
+table {
+    background: whitesmoke;
+    text-align: left;
+    border-spacing: 0;
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+th {
+    padding: var(--h4) 0 var(--h4) 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+tr th:first-child {
+    padding-left: var(--table-side-padding);
+}
+
+td {
+    padding: var(--table-text) 0 var(--table-text) 0;
+}
+
+tr td:first-child {
+    padding: 0 0 0 var(--table-side-padding);
+}
+
+tr td:last-child {
+    padding-right: var(--table-side-padding);
+}
+
+.gray-row {
+    background: var(--light-gray);
+}
+
+.race-result-table {
+    display: none;
+}
+
+.sprint-table {
+    display: none;
+}
+
+.fastest-lap-table {
+    display: none;
+}

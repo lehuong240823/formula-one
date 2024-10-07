@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+  <!-- Detailed Racing Car Shape -->
+  <path d="M 50 150 
+           L 100 140 
+           C 110 100, 130 80, 180 70 
+           L 220 60 
+           C 240 50, 260 40, 300 45 
+           L 350 45 
+           C 390 40, 410 50, 440 60 
+           L 480 70 
+           C 530 80, 550 100, 560 140 
+           L 550 150 
+           L 50 150 Z" 
+        stroke="black" stroke-width="4" fill="transparent"/>
+  
+  <!-- Left side wheel -->
+  <circle cx="120" cy="150" r="20" stroke="black" stroke-width="4" fill="transparent"/>
+  
+  <!-- Right side wheel -->
+  <circle cx="480" cy="150" r="20" stroke="black" stroke-width="4" fill="transparent"/>
+
+  <!-- Placeholder for heading text inside car frame -->
+  <text x="230" y="100" font-size="20" font-weight="bold" fill="black">Formula One Racing</text>
+</svg>

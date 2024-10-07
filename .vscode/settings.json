@@ -1,4 +1,4 @@
 {
-    "svg.preview.background": "transparent",
-    "livePreview.defaultPreviewPath": "/html/home.html"
+    "svg.preview.background": "dark-transparent",
+    "livePreview.defaultPreviewPath": "/html/results.html"
 }

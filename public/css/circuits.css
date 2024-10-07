@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    padding: var(--body-s-v-padding) var(--body-h-padding);
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+    font-size: var(--h1);
+    text-align: center;
+}
+
+.card-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: var(--s-gap);
+}
+
+.circuit-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: var(--m-gap);
+    width: 22vw;
+    padding: 1vw;
+    background: rgba(190, 215, 232, 0.285);
+    border: var(--px-1) var(--light-gray) solid;
+    border-radius: var(--h3);
+}
+
+.circuit-card:hover {
+    border: var(--px-5) var(--dark-gray) solid;
+    transform: translateY(calc(var(--px-5)*-4));
+    transition: 3ms ease-in-out;
+}
+
+.circuit-name {
+    font-size: var(--h3);
+    text-align: center;
+    border-bottom: var(--px-1) var(--light-gray) solid;
+    padding-bottom: 1vw;
+}
+
+.circuit-img {
+    width: 100%;
+}

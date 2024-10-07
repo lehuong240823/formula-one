@@ -1,0 +1,130 @@
+@import url(constants.css);
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: var(--body-v-padding) var(--body-h-padding) var(--body-v-padding) var(--body-h-padding);
+    font-family: 'Orbitron', sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: var(--h1);
+    text-align: center;
+    text-shadow: var(--px-5) var(--px-1) 0 gray;
+    color: var(--black);
+}
+
+p {
+    padding: var(--h4);
+    background: var(--light-gray);
+    border-radius: calc(var(--h4)/2);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--h4);
+}
+
+.card-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: var(--s-gap);
+}
+
+.driver-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 22vw;
+    padding: 1vw 1vw 1vw 1vw;
+    background: var(--white);
+    border: var(--px-1) solid var(--light-gray);
+    border-radius: var(--m-radius);
+    aspect-ratio: 2/3;
+    font-family: 'Orbitron', sans-serif;
+    box-shadow: var(--s-radius) var(--m-radius) var(--m-radius) var(--s-radius) var(--light-gray);
+}
+
+.driver-img {
+    width: 100%;
+    height: 65%;
+    border-radius: var(--px-2);
+    object-fit: cover;
+    object-position: 0% 0%;
+}
+
+.driver-infor {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.name-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-name-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--s-gap);
+}
+
+.first-name {
+    font-size: var(--h2);
+}
+
+.country-flag {
+    height: var(--h3);
+    border: var(--px-1) var(--light-gray) solid;
+    border-radius: var(--px-5);
+}
+
+.last-name {
+    font-size: 1.979167vw; /* 38/1920 */
+    font-weight: bold;
+    text-shadow: var(--px-1) var(--px-1) var(--px-2) var(--dark-gray);
+}
+
+.point-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.point-num {
+    font-size: var(--h2);
+}
+
+.pts {
+    background: black;
+    border-radius: var(--px-5);
+    color: var(--white);
+    font-size: var(--h3);
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+hr {
+    border-color: var(--light-gray);
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1vw;
+    border-top: var(--px-1) solid var(--light-gray);
+}
+
+.team-name {
+    font-size: var(--h4);
+}
+
+.driver-pos {
+    height: var(--h3);
+}

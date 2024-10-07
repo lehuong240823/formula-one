@@ -1,0 +1,61 @@
+@import url(constants.css);
+
+.goog-te-combo {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--button-link);
+    color: white;
+    background-color: transparent;
+    border: none;
+    max-width: 12vw;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--button-link) var(--body-s-h-padding) var(--button-link) var(--body-s-h-padding);
+    background: var(--blue);
+    font-family: "Poppins", sans-serif;
+    font-size: var(--button-link);
+    color: var(--white);
+}
+
+.logo-link-div {
+    display: flex;
+    align-items: center;
+    gap: var(--m-gap);
+}
+
+.link-div {
+    display: flex;
+    gap: var(--s-gap);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    transform: translateY(var(--px-5));
+    transition: 0.3ms ease-in-out;
+    text-shadow: var(--px-1) var(--px-2) 0px var(--white-shadow);
+}
+
+.language-dropdown {
+    font-family: "Poppins", sans-serif;
+    font-size: var(--button-link);
+    color: white;
+    background-color: transparent;
+    border: none;
+    max-width: 11vw;
+}
+
+option {
+    color: var(--black);
+}
+
+.header-logo {
+    width: auto;
+    height: calc(var(--button-link)*2);
+}
+

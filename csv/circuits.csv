@@ -1,0 +1,26 @@
+circuit_id,grand_prix,name,first_grand_prix,number_of_laps,circuit_length,race_distance,lap_record,carbon_png,circuit_avif
+1,Sakhir,Bahrain International Circuit,2004,57,5.412 km,308.238 km,1:31.447Pedro de la Rosa (2005),../img/circuits/sakhir-carbon.png,../img/circuits/sakhir-circuit.avif
+2,Bahrain,Bahrain International Circuit,2004,57,5.412 km,308.238 km,1:31.447Pedro de la Rosa (2005),../img/circuits/bahrain-carbon.png,../img/circuits/bahrain-circuit.avif
+3,Saudi Arabia,Jeddah Corniche Circuit,2021,50,6.174 km,308.45 km,1:30.734Lewis Hamilton (2021),../img/circuits/saudi-arabia-carbon.png,../img/circuits/saudi-arabia-circuit.avif
+4,Australia,Albert Park Grand Prix Circuit,1996,58,5.278 km,306.124 km,1:19.813Charles Leclerc (2024),../img/circuits/australia-carbon.png,../img/circuits/australia-circuit.avif
+5,Japan,Suzuka Circuit,1987,53,5.807 km,307.471 km,1:30.983Lewis Hamilton (2019),../img/circuits/japan-carbon.png,../img/circuits/japan-circuit.avif
+6,China,Shanghai International Circuit,2004,56,5.451 km,305.066 km,1:32.238Michael Schumacher (2004),../img/circuits/china-carbon.png,../img/circuits/china-circuit.avif
+7,Miami,Miami International Autodrome,2022,57,5.412 km,308.326 km,1:29.708Max Verstappen (2023),../img/circuits/miami-carbon.png,../img/circuits/miami-circuit.avif
+8,Emilia-Romagna,Autodromo Internazionale Enzo e Dino Ferrari,1980,63,4.909 km,309.049 km,1:15.484Lewis Hamilton (2020),../img/circuits/emilia-romagna-carbon.png,../img/circuits/emilia-romagna-circuit.avif
+9,Monaco,Circuit de Monaco,1950,78,3.337 km,260.286 km,1:12.909Lewis Hamilton (2021),../img/circuits/monaco-carbon.png,../img/circuits/monaco-circuit.avif
+10,Canada,Circuit Gilles-Villeneuve,1978,70,4.361 km,305.27 km,1:13.078Valtteri Bottas (2019),../img/circuits/canada-carbon.png,../img/circuits/canada-circuit.avif
+11,Spain,Circuit de Barcelona-Catalunya,1991,66,4.657 km,307.236 km,1:16.330Max Verstappen (2023),../img/circuits/spain-carbon.png,../img/circuits/spain-circuit.avif
+12,Austria,Red Bull Ring,1970,71,4.318 km,306.452 km,1:05.619Carlos Sainz (2020),../img/circuits/austria-carbon.png,../img/circuits/austria-circuit.avif
+13,Great Britain,Silverstone Circuit,1950,52,5.891 km,306.198 km,1:27.097Max Verstappen (2020),../img/circuits/great-britain-carbon.png,../img/circuits/great-britain-circuit.avif
+14,Hungary,Hungaroring,1986,70,4.381 km,306.63 km,1:16.627Lewis Hamilton (2020),../img/circuits/hungary-carbon.png,../img/circuits/hungary-circuit.avif
+15,Belgium,Circuit de Spa-Francorchamps,1950,44,7.004 km,308.052 km,1:44.701Sergio Perez (2024),../img/circuits/belgium-carbon.png,../img/circuits/belgium-circuit.avif
+16,Netherlands,Circuit Zandvoort,1952,72,4.259 km,306.587 km,1:11.097Lewis Hamilton (2021),../img/circuits/netherlands-carbon.png,../img/circuits/netherlands-circuit.avif
+17,Italy,Autodromo Nazionale Monza,1950,53,5.793 km,306.72 km,1:21.046Rubens Barrichello (2004),../img/circuits/italy-carbon.png,../img/circuits/italy-circuit.avif
+18,Azerbaijan,Baku City Circuit,2016,51,6.003 km,306.049 km,1:43.009Charles Leclerc (2019),../img/circuits/azerbaijan-carbon.png,../img/circuits/azerbaijan-circuit.avif
+19,Singapore,Marina Bay Street Circuit,2008,62,4.94 km,306.143 km,1:34.486Daniel Ricciardo (2024),../img/circuits/singapore-carbon.png,../img/circuits/singapore-circuit.avif
+20,United States,Circuit of The Americas,2012,56,5.513 km,308.405 km,1:36.169Charles Leclerc (2019),../img/circuits/united-states-carbon.png,../img/circuits/united-states-circuit.avif
+21,Mexico,Autódromo Hermanos Rodríguez,1963,71,4.304 km,305.354 km,1:17.774Valtteri Bottas (2021),../img/circuits/mexico-carbon.png,../img/circuits/mexico-circuit.avif
+22,Brazil,Autódromo José Carlos Pace,1973,71,4.309 km,305.879 km,1:10.540Valtteri Bottas (2018),../img/circuits/brazil-carbon.png,../img/circuits/brazil-circuit.avif
+23,Las Vegas,Las Vegas Strip Circuit,2023,50,6.201 km,309.958 km,1:35.490Oscar Piastri (2023),../img/circuits/las-vegas-carbon.png,../img/circuits/las-vegas-circuit.avif
+24,Qatar,Lusail International Circuit,2021,57,5.419 km,308.611 km,1:24.319Max Verstappen (2023),../img/circuits/qatar-carbon.png,../img/circuits/qatar-circuit.avif
+25,Abu Dhabi,Yas Marina Circuit,2009,58,5.281 km,306.183 km,1:26.103Max Verstappen (2021),../img/circuits/abu-dhabi-carbon.png,../img/circuits/abu-dhabi-circuit.avif
