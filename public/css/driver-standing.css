@@ -43,6 +43,7 @@ select {
     background-color: transparent;
     border: none;
     font-size: var(--table-text);
+    font-family: "Poppins", serif;
 }
 
 option {

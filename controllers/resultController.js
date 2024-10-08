@@ -44,6 +44,30 @@ const resultController = {
         }
     },
 
+    getResultTypes: async function (request, response) {
+        let connection;
+        try {
+            connection = await getConnection();
+            const year = request.query.year;
+            const grand_prix = request.query.grand_prix;
+            const query = `SELECT DISTINCT(result.type) FROM result
+                JOIN schedule
+                ON result.schedule_id = schedule.schedule_id
+                JOIN circuit 
+                ON schedule.circuit_id = circuit.circuit_id
+                WHERE schedule.year = ?
+                AND circuit.grand_prix = ?;`;
+            const [result] = await connection.promise().query(query, [year, grand_prix]);
+            response.json(result);
+        } catch (error) {
+            response.status(500).json({ message: 'Error getting year', error: error.message });
+        } finally {
+            if (connection) {
+                await connection.end();
+            }
+        }
+    },
+
     getAllSeasons: async function (request, response) {
         let connection;
         try {
@@ -82,15 +106,59 @@ const resultController = {
         }
     },
 
-    getAllResult: async function (request, response) {
+    getRaceResult: async function (request, response) {
         let connection;
         try {
             connection = await getConnection();
-            const query = 'SELECT schedule.*, circuit.grand_prix, circuit.carbon_png FROM schedule JOIN circuit WHERE schedule.circuit_id = circuit.circuit_id;';
-            const [result] = await connection.promise().query(query);
+            const year = request.query.year;
+            const grand_prix = request.query.grand_prix;
+            const result_type = request.query.result_type;
+            switch (result_type) {
+                case 'Race result':
+                    var query = `SELECT driver.position, driver.name, result.car, result.laps, result.time_retired, result.pts
+                    FROM result
+                    JOIN schedule
+                    ON result.schedule_id = schedule.schedule_id
+                    JOIN circuit 
+                    ON schedule.circuit_id = circuit.circuit_id
+                    JOIN driver 
+                    ON result.driver_id = driver.driver_id
+                    WHERE result.type = 'race'
+                    AND schedule.year = ?
+                    AND circuit.grand_prix = ?;`;
+                    break;
+                case 'Sprint':
+                    var query = `SELECT driver.position, driver.name, result.car, result.laps, result.time_retired, result.pts
+                    FROM result
+                    JOIN schedule
+                    ON result.schedule_id = schedule.schedule_id
+                    JOIN circuit 
+                    ON schedule.circuit_id = circuit.circuit_id
+                    JOIN driver 
+                    ON result.driver_id = driver.driver_id
+                    WHERE result.type = 'sprint'
+                    AND schedule.year = ?
+                    AND circuit.grand_prix = ?;`;
+                    break;
+                case 'Fastest lap':
+                    var query = `SELECT driver.position, driver.name, fastest_lap_result.car, 
+                    fastest_lap_result.time_of_day, fastest_lap_result.time, fastest_lap_result.avg_speed
+                    FROM fastest_lap_result
+                    JOIN schedule
+                    ON fastest_lap_result.schedule_id = schedule.schedule_id
+                    JOIN circuit 
+                    ON schedule.circuit_id = circuit.circuit_id
+                    JOIN driver 
+                    ON fastest_lap_result.driver_id = driver.driver_id
+                    WHERE schedule.year = ?
+                    AND circuit.grand_prix = ?;`
+                    break;
+                default:
+            }
+            const [result] = await connection.promise().query(query, [year, grand_prix]);
             response.json(result);
         } catch (error) {
-            response.status(500).json({ message: 'Error getting schedule', error: error.message });
+            response.status(500).json({ message: 'Error getting result', error: error.message });
         } finally {
             if (connection) {
                 await connection.end();

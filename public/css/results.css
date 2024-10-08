@@ -43,6 +43,7 @@ select {
     background-color: transparent;
     border: none;
     font-size: var(--table-text);
+    font-family: "Poppins", sans-serif;
 }
 
 table {
@@ -76,16 +77,4 @@ tr td:last-child {
 
 .gray-row {
     background: var(--light-gray);
-}
-
-.race-result-table {
-    display: none;
-}
-
-.sprint-table {
-    display: none;
-}
-
-.fastest-lap-table {
-    display: none;
 }

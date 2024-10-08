@@ -12,7 +12,7 @@ const fileRoute = require('./routes/fileRoute')
 app.use(express.static(path.join(__dirname, '/public')));
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, 'public/html', 'circuits.html'));
+    res.sendFile(path.join(__dirname, 'public/html', 'home.html'));
 });
 
 app.use(express.json());

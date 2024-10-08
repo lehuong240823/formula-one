@@ -1,4 +1,67 @@
 body {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(180deg, hsla(0, 0.00%, 0.00%, 0.90), hsla(0, 0.00%, 100.00%, 0.00)),
+        url(../img/background.jpg);
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: var(--body-v-padding) var(--body-h-padding);
+    color: var(--white);
+    font-family: "Orbitron", sans-serif;
+}
+
+.schedule-div {
+    display: flex;
+    gap: var(--m-gap);
+    background: rgba(255, 255, 255, 0.15);
+    width: 80%;
+    padding: var(--body-s-v-padding);
+    outline: white solid var(--px-5);
+    outline-offset: calc(var(--px-5)*2);
+    border-radius: 0 var(--l-radius);
+    filter: drop-shadow(20px 20px 10px hsla(0, 0.00%, 0.00%, 1.00));
+}
+
+.schedule-infor-div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-gap);
+    justify-content: center;
+}
+
+.date-time-div {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--h2);
+    gap: var(--px-5);
+}
+
+.month {}
+
+.date {
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: bold;
+    width: fit-content;
+    padding: var(--px-2);
+    border-radius: var(--m-radius);
+}
+
+.grand-prix {
+    font-size: var(--h1);
+    font-weight: bold;
+}
+
+.grand-prix-title {
+    font-size: var(--h3);
+}
+
+.circuit-img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
 }

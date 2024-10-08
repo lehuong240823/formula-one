@@ -31,7 +31,7 @@ h1 {
     row-gap: var(--m-gap);
     width: 22vw;
     padding: 1vw;
-    background: rgba(190, 215, 232, 0.285);
+    background: var(--white);
     border: var(--px-1) var(--light-gray) solid;
     border-radius: var(--h3);
 }
