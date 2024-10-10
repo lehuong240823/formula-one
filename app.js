@@ -6,7 +6,7 @@ const circuitRoute = require('./routes/circuitRoute')
 const driverRoute = require('./routes/driverRoute')
 const scheduleRoute = require('./routes/scheduleRoute')
 const resultRoute = require('./routes/resultRoute')
-const fastestLapRoute = require('./routes/fastestLapRoute')
+const driverStandingRoute = require('./routes/driverStandingRoute')
 const fileRoute = require('./routes/fileRoute')
 
 app.use(express.static(path.join(__dirname, '/public')));
@@ -21,7 +21,7 @@ app.use('/api', circuitRoute);
 app.use('/api', driverRoute);
 app.use('/api', scheduleRoute);
 app.use('/api', resultRoute);
-//app.use('/api', fastestLapRoute);
+app.use('/api', driverStandingRoute);
 app.use('/api', fileRoute);
 
 app.listen(port, function () {

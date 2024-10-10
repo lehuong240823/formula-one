@@ -43,6 +43,8 @@ function googleTranslateElementInit() {
     new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
 }
 
+//---------------------------------------------------------------------------------------------------------
+
 const year_dropdown = document.getElementById('year-dropdown');
 const season_dropdown = document.getElementById('season-dropdown');
 const result_type_dropdown = document.getElementById('result-type-dropdown');
@@ -53,10 +55,17 @@ const sprint_table = document.getElementById('sprint-table');
 const fastest_lap_table = document.getElementById('fastest-lap-table');
 const wrap_div = document.getElementById('wrap-div');
 
-function create_all_seasons_table() {
+function create_all_seasons_table(data) {
     const table = document.createElement('table');
     const thead = document.createElement('thead');
     const tr = document.createElement('tr');
+    const tbody = document.createElement('tbody');
+
+    table.className = 'all-seasons-table';
+    table.id = 'all-seasons-table';
+
+    thead.append(tr);
+    table.append(thead, tbody);
 
     const fields = ['Grand prix', 'Date', 'Winner', 'Car', 'Laps', 'Time']
     fields.forEach(function (field) {
@@ -65,11 +74,27 @@ function create_all_seasons_table() {
         tr.append(th);
     })
 
-    table.className = 'all-seasons-table';
-    table.id = 'all-seasons-table';
+    Array.from(data).forEach(function (result) {
+        const row = document.createElement('tr');
+        const grand_prix_td = document.createElement('td');
+        const date_td = document.createElement('td');
+        const winner_td = document.createElement('td');
+        const car_td = document.createElement('td');
+        const laps_td = document.createElement('td');
+        const time_td = document.createElement('td');
 
-    thead.append(tr);
-    table.append(thead);
+        grand_prix_td.textContent = result.grand_prix;
+        date_td.textContent = result.date.toString().concat(' ', result.month, ' ', result.year);
+        winner_td.textContent = result.name;
+        car_td.textContent = result.car;
+        laps_td.textContent = result.laps;
+        time_td.textContent = result.time_retired;
+
+        Array.from(data).indexOf(result) % 2 == 0 ? row.className = 'white-row' : row.className = 'gray-row';
+
+        row.append(grand_prix_td, date_td, winner_td, car_td, laps_td, time_td);
+        tbody.append(row);
+    });
     return table;
 }
 
@@ -252,32 +277,7 @@ async function fetchAllSeasonsResult(year) {
     try {
         const response = await fetch(`/api/result/all-seasons?year=${year}`);
         const data = await response.json();
-        const all_seasons_table = create_all_seasons_table();
-        const tbody = document.createElement('tbody');
-
-        Array.from(data).forEach(function (result) {
-            const row = document.createElement('tr');
-            const grand_prix_td = document.createElement('td');
-            const date_td = document.createElement('td');
-            const winner_td = document.createElement('td');
-            const car_td = document.createElement('td');
-            const laps_td = document.createElement('td');
-            const time_td = document.createElement('td');
-
-            grand_prix_td.textContent = result.grand_prix;
-            date_td.textContent = result.date.toString().concat(' ', result.month, ' ', result.year);
-            winner_td.textContent = result.name;
-            car_td.textContent = result.car;
-            laps_td.textContent = result.laps;
-            time_td.textContent = result.time_retired;
-
-            Array.from(data).indexOf(result) % 2 == 0 ? row.className = 'white-row' : row.className = 'gray-row';
-
-            row.append(grand_prix_td, date_td, winner_td, car_td, laps_td, time_td);
-            tbody.append(row);
-        });
-
-        all_seasons_table.append(tbody);
+        const all_seasons_table = create_all_seasons_table(data);
         if (wrap_div.lastChild.tagName == 'TABLE') {
             wrap_div.removeChild(wrap_div.lastChild);
         }
